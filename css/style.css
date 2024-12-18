@@ -2,8 +2,18 @@
     margin: 0;
     padding: 0;
 }
+
+:root{
+    --light-green: #819B57;
+    --dark-green: #465929;
+    --main-light: #D9D9D9;
+    --main-dark: #31261A;
+    --white-for-cards: #FAF4EA;
+}
+
 body {
     font-family: "Poppins", sans-serif;
+    color: var(--main-dark);
 }
 ul {
      list-style-type: none;
@@ -19,7 +29,8 @@ a {
 /*! *////////////////* */
 
 /**  HEADER */
-.header {
+.header {\
+
 
 }
 
@@ -30,7 +41,7 @@ a {
 font-weight: 400;
 font-size: 24px;
 text-transform: uppercase;
-color: #D9D9D9;
+color: var(--main-light);
 }
 
 .header-nav-span {
@@ -44,42 +55,42 @@ color: #D9D9D9;
 font-weight: 400;
 font-size: 18px;
 /* text-align: center; */
-color: #D9D9D9;
+color: var(--main-light);
 }
 
 .header-nav-item-link {
     font-weight: 400;
     font-size: 18px;
     /* text-align: center; */
-    color: #d9d9d9;
+    color: var(--main-light);
 }
 
 .header-nav-item-link:focus {
     font-weight: 600;
     font-size: 18px;
-    color: #819B57;
+    color: var(--light-green);
 }
 
 .header-nav-item-link:hover {
     font-weight: 600;
     font-size: 18px;
-    color: #819B57;
+    color: var(--light-green);
 }
 
 .header-nav-item-link:active {
     font-weight: 600;
     font-size: 18px;
-    color: #819B57;
+    color: var(--light-green);
 }
 
 .header-btn {
-    background-color: #819B57;
-    border: 2px solid #819B57;
+    background-color: var(--light-green);
+    border: 2px solid var(--light-green);
 border-radius: 8px;
 padding: 16px 32px;
 width: 238px;
 height: 59px;
-color: #d9d9d9;
+color: var(--main-light);
 font-weight: 600;
 font-size: 18px;
 }
@@ -94,13 +105,13 @@ font-size: 18px;
     font-weight: 900;
 font-size: 128px;
 text-align: center;
-color: #D9D9D9;
+color: var(--main-light);
 }
 .hero-title-span {
-color: #819B57;
+color: var(--light-green);
 }
 .hero-list {
-    background-color: #819B57;
+    background-color: var(--light-green);
 }
 .hero-item {
 }
@@ -114,18 +125,21 @@ color: #819B57;
     font-weight: 900;
 font-size: 64px;
 line-height: 131%;
-color: #31261A;
+color: var(--main-dark);
 }
 .traditional-text {
     font-weight: 600;
-    color: #31261A;
+    color: var(--main-dark);
 }
 
 .traditional-text-span1 {
     font-weight: 600;
     font-size: 18px;
     text-transform: uppercase;
-    color: #819B57;
+    color: var(--light-green);
 }
 .traditional-text-span2 {
+}
+.headchef-span {
+color: var(--dark-green);
 }
