@@ -22,19 +22,38 @@ a {
     text-decoration: none;
     
 }
-.background {
+/* .background {
     background: linear-gradient(127deg, rgba(18, 18, 17, 0.78) 0%, rgba(18, 18, 17, 0.6) 63.89%, rgba(18, 18, 17, 0) 100%);
-}
+} */
 
 /*! *////////////////* */
 
 /**  HEADER */
-.header {\
-
-
+.header {
+ 
+}
+.header-container {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+    margin: 0 95px;
+    padding-top: 38px;
+    height: 59px;
+    
 }
 
 .header-nav {
+    display: flex;
+    flex-grow: 1;
+    align-items: center;
+    gap: 40px;
+   
+}
+.header-nav-list{
+    display: flex;
+    flex-grow: 1;
+    gap: 64px;
+    justify-content: center;
 }
 
 .header-nav-link {
@@ -65,21 +84,7 @@ color: var(--main-light);
     color: var(--main-light);
 }
 
-.header-nav-item-link:focus {
-    font-weight: 600;
-    font-size: 18px;
-    color: var(--light-green);
-}
-
-.header-nav-item-link:hover {
-    font-weight: 600;
-    font-size: 18px;
-    color: var(--light-green);
-}
-
-.header-nav-item-link:active {
-    font-weight: 600;
-    font-size: 18px;
+.header-nav-item-link:focus, .header-nav-item-link:hover, .header-nav-item-link:active {
     color: var(--light-green);
 }
 
@@ -95,32 +100,65 @@ font-weight: 600;
 font-size: 18px;
 }
 
-/!************/
+
+.container {
+    width: 100%;
+    max-width: 1288px;
+    padding: 0 24px;
+    margin: 0 auto;
+}
 
 /** HERO */
 .hero {
+   
+    border-color: var(--light-green);
+    /* background-color: var(--light-green); */
 
 }
 .hero-title {
     font-weight: 900;
 font-size: 128px;
 text-align: center;
-color: var(--main-light);
+margin: 175px 159px 272px 159px;
 }
 .hero-title-span {
 color: var(--light-green);
 }
-.hero-list {
+
+.advantages {
     background-color: var(--light-green);
+padding: 16px;
 }
-.hero-item {
+
+.advantages-list {
+    
+    display: flex;
+    justify-content: space-between;
+   gap: 40px;
+   
+
+}
+.advantages-item {
+    color: var(--main-light);
 }
 
 /!***********************/
 
-.traditional {
-}
 
+.traditional {
+    margin-bottom: 96px;
+}
+.traditional-container {
+    display: flex;
+    gap: 40px;
+    justify-content: space-between;
+}
+.traditional-content {
+    display: flex;
+ max-width: 710px;
+    flex-direction: column;
+gap: 42px;
+}
 .traditional-title {
     font-weight: 900;
 font-size: 64px;
@@ -130,6 +168,10 @@ color: var(--main-dark);
 .traditional-text {
     font-weight: 600;
     color: var(--main-dark);
+
+}
+.traditional-text.limited { 
+max-width: 340px;
 }
 
 .traditional-text-span1 {
