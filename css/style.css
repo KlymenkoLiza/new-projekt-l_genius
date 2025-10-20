@@ -4,16 +4,24 @@
 }
 
 :root{
-    --light-green: #819B57;
-    --dark-green: #465929;
+    --color-brand-normal: #819B57;
+   --color-brand-dark: #465929;
     --main-light: #D9D9D9;
-    --main-dark: #31261A;
-    --white-for-cards: #FAF4EA;
+    --color-primary-dark: #31261A;
+    --color-primery-light: #FAF4EA;
+    --color-brand-light: #cfcfbc;
+    --color-secondary-dark:#A28268;
+      
 }
 
 body {
     font-family: "Poppins", sans-serif;
-    color: var(--main-dark);
+    font-size: 18px;
+    font-weight: 400;
+    font-heigth: 1.5;
+    margin: 0;
+    color: var(--color-primary-dark);
+    background-color: var(--color-primery-light);
 }
 ul {
      list-style-type: none;
@@ -22,7 +30,9 @@ a {
     text-decoration: none;
     
 }
-
+.centered {
+    text-align: center;
+}
 
 /*! *////////////////* */
 
@@ -83,12 +93,12 @@ color: var(--main-light);
 }
 
 .header-nav-item-link:focus, .header-nav-item-link:hover, .header-nav-item-link:active {
-    color: var(--light-green);
+    color: var(--color-brand-normal);
 }
 
 .header-btn {
-    background-color: var(--light-green);
-    border: 2px solid var(--light-green);
+    background-color: var(--color-brand-normal);
+    border: 2px solid var(--color-brand-normal);
 border-radius: 8px;
 padding: 16px 32px;
 width: 238px;
@@ -104,13 +114,13 @@ font-size: 18px;
     max-width: 1288px;
     padding: 0 24px;
     margin: 0 auto;
-margin-bottom: 100px;
+margin-bottom: 96px;
 }
 
 /** HERO */
 .hero {
    padding: 272px 0;
-    border-color: var(--light-green);
+    border-color: var(--color-brand-normal);
     background-image: url('/images/backgraund-image.jpg');
 background-repeat: no-repeat;
 background-position: center top;
@@ -124,13 +134,14 @@ text-align: center;
 /* margin: 175px 159px 272px 159px; */
 }
 .hero-title-span {
-color: var(--light-green);
+color: var(--color-brand-normal);
 }
 
 .advantages {
-    background-color: var(--light-green);
+    background-color: var(--color-brand-normal);
 padding-bottom: 16px;
 padding-top: 16px;
+max-height: 62px;
 }
 
 .advantages-list {
@@ -146,8 +157,6 @@ padding-top: 16px;
     font-weight: 300;
 font-size: 20px;
 }
-
-/!***********************/
 
 
 .traditional {
@@ -169,11 +178,11 @@ gap: 42px;
     font-weight: 900;
 font-size: 64px;
 line-height: 131%;
-color: var(--main-dark);
+color: var(--color-primary-dark);
 }
 .traditional-text {
     font-weight: 600;
-    color: var(--main-dark);
+    color: var(--color-primary-dark);
 
 }
 .traditional-text.limited { 
@@ -184,7 +193,7 @@ max-width: 340px;
     font-weight: 600;
     font-size: 18px;
     text-transform: uppercase;
-    color: var(--light-green);
+    color: var(--color-brand-normal);
 }
 .traditional-text-span2 {
 }
@@ -192,6 +201,7 @@ max-width: 340px;
 /* *****НАШІ ШЕФ-КУХАРІ***** */
 
 .headchef {
+
 }
 .headchef-title {
 font-weight: 900;
@@ -200,8 +210,26 @@ line-height: 131%;
 text-align: center;
 color: #31261A;
 max-width: 520px;
-margin: 0 auto;
+margin: 0 auto 80px;
 }
+.headchef-title::before, 
+.headchef-title::after {
+    content: '';
+    display: block;
+    width: 352px;
+    border: 2px solid var(--color-brand-light);
+
+}
+.chef-photo {
+    border-radius: 4px 4px 4px 200px;
+        box-shadow: -16px 16px 0 0 var(--color-primery-light),
+     -16px 16px 0 2px var(--color-secondary-dark);
+}
+.headchef-list {
+    display: flex;
+    gap: 30px;
+}
+
 .headchef-span {
     color: #465929;
 }
@@ -214,6 +242,11 @@ margin: 0 auto;
     display: flex;
     width: 605px;
     justify-content: center;
+    flex-basis: calc((100% - 30px) / 2);
+}
+.headchef-card {
+    display: flex;
+    gap: 30px;
 }
 .headchef-item-container {
     display: flex;
@@ -230,8 +263,14 @@ margin: 0 auto;
 }
 .formats-title {
 }
+.formats-container {
+    display: flex;
+    gap: 32px;
+    align-items: center;
+}
 .formats-list {
     display: flex;
+    flex-wrap: wrap;
     gap: 20px;
    
 
@@ -241,14 +280,130 @@ flex-basis: calc((100% - 40px) / 3);
 
 }
 .format-card {
+    height: 444px;
     border: 1px solid lightgrey;
     border-radius: 16px;
  padding: 24px;
-
+background: linear-gradient(180deg, rgba(49, 38, 26, 0) 55.21%, rgba(49, 38, 26, 0.71) 72.92%, #31261a 100%);
 }
 .formats-subtitle {
 }
 .formats-text {
+}
+/* -------------Carousel--------------- */
+.carousel-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+width: 44px;
+height: 44px;
+border-radius: 50%;
+fill: var(--color-primary-dark);
+background-color: transparent;
+border: 1px solid var(--color-primary-dark);
+}
+.carousel-button:hover{
+    background-color: var(--color-primary-dark);
+    fill: var(--color-primery-light);
+}
+
+/* --------------------Contact----------------------- */
+.contact-section {
+    padding-bottom: 96px;
+}
+.container {
+}
+.contact-container {
+    display: flex;
+    gap: 32px;
+}
+.contact-form {
+}
+.contact-title {
+   font-weight: 900;
+font-size: 64px;
+line-height: 131%;
+color: var(--color-primary-dark); 
+}
+.contact-text {
+font-weight: 400;
+font-size: 18px;
+color: var(--color-primary-dark);
+}
+.contact-map {
+    flex-shrink: 0;
+    border: none;
+    border-radius: 16px;
+}
+/* ----------------Footer--------------------- */
+
+.footer {
+    background-color: #31261A;
+    background-image: url(../images/footer-backgraund.png);
+background-repeat: no-repeat;
+background-position: center;
+background-size: cover;
+padding: 32px 0;
+}
+.footer-container {
+    display: flex;
+}
+.footer-nav {
+    flex-basis: 50%;
+    display: flex;
+}
+.footer-link {
+    flex-grow: 1;
+}
+.footer-menu {
+    flex-grow: 1;
+}
+.footer-item {
+}
+.footer-list-link {
+font-weight: 400;
+font-size: 18px;
+color: var(--color-primery-light);
+}
+
+.footer-addres {
+    display: flex;
+    flex-basis: 50%;
+}
+.addres-list {
+    flex-grow: 1;
+}
+.addres-info {
+    flex-grow: 1;
+}
+.footer-container,
+ .footer-addres,
+  .footer-nav,
+   .footer-menu,
+    .addres-list,
+     .addres-info {
+    gap: 20px;
+}
+.footer-addres-item {
+       color: var(--color-primery-light);
+    font-size: 16px;
+    font-weight: 300;
+    text-decoration: none;
+}
+.footer-addres-link {
+    color: var(--color-primery-light);
+    font-size: 16px;
+    font-weight: 300;
+    text-decoration: none;
+}
+.addres-copiright {
+    font-weight: 400;
+    font-size: 14px;
+    color: var(--color-primary-dark);
+}
+.footer-item-svg {
+    fill: var(--color-primery-light);
 }
 
 
