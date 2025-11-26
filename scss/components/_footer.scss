@@ -1,0 +1,85 @@
+.footer {
+    background-color: var(--color-primary-dark);
+    background-image: url(../images/footer-backgraund.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    padding: 32px 0;
+    position: relative;
+}
+.footer-container {
+    display: flex;
+}
+.footer-nav {
+    flex-basis: 50%;
+    display: flex;
+}
+.footer-link {
+    flex-grow: 1;
+}
+.footer-menu {
+    flex-grow: 1;
+}
+.footer-list-link {
+font-weight: 400;
+font-size: 18px;
+color: var(--color-primery-light);
+}
+.footer-addres {
+    display: flex;
+    flex-basis: 50%;
+}
+.addres-list {
+    flex-grow: 1;
+}
+.addres-info {
+    flex-grow: 1;
+}
+.footer-container,
+ .footer-addres,
+  .footer-nav,
+   .footer-menu,
+    .addres-list,
+     .addres-info {
+    gap: 20px;
+}
+.footer-addres-item {
+       color: var(--color-primery-light);
+    font-size: 16px;
+    font-weight: 300;
+    text-decoration: none;
+}
+.footer-addres-link {
+    color: var(--color-primery-light);
+    font-size: 16px;
+    font-weight: 300;
+    text-decoration: none;
+}
+.addres-copiright {
+    font-weight: 400;
+    font-size: 14px;
+    color: var(--color-primary-dark);
+}
+.footer-item-svg {
+    fill: var(--color-primery-light);
+}
+
+.footer::before,
+.footer::after {
+position: absolute;
+bottom: 0;
+background-repeat: no-repeat;
+content: '';
+}
+.footer::before {
+    background-image: url('../images/dekor-bread-small.png');
+    width: 180px;
+    height: 120px;
+    left: 0;
+}
+.footer::after {
+    background-image: url('../images/dekor-bread-large.png');
+    width: 380px;
+    height: 190px;
+    right: 0;
+}

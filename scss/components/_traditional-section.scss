@@ -1,0 +1,32 @@
+.traditional-container {
+    display: flex;
+    gap: 40px;
+    justify-content: space-between;
+}
+.traditional-content {
+    display: flex;
+ max-width: 710px;
+    flex-direction: column;
+gap: 42px;
+}
+.traditional-title {
+    font-weight: 900;
+font-size: 64px;
+line-height: 131%;
+color: var(--color-primary-dark);
+}
+.traditional-text {
+    font-weight: 600;
+    color: var(--color-primary-dark);
+
+}
+.traditional-text.limited { 
+max-width: 340px;
+}
+
+.traditional-text-span1 {
+    font-weight: 600;
+    font-size: 18px;
+    text-transform: uppercase;
+    color: var(--color-brand-normal);
+}

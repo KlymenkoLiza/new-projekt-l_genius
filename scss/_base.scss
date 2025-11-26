@@ -1,0 +1,40 @@
+*,
+*::after,
+*::before {
+    box-sizing: border-box;
+
+}
+
+:root{
+    --color-brand-normal: #819B57;
+   --color-brand-dark: #465929;
+    --main-light: #D9D9D9;
+    --color-primary-dark: #31261A;
+    --color-primery-light: #FAF4EA;
+    --color-brand-light: #cfcfbc;
+    --color-secondary-dark:#A28268;
+      
+}
+
+body {
+    font-family: "Poppins", sans-serif;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 1.5;
+    margin: 0;
+    color: var(--color-primary-dark);
+    background-color: var(--color-primery-light);
+}
+h1, h2, h3, h4, h5, h6, p {
+    margin-top: 0;
+}
+ul {
+    margin: 0;
+    padding: 0;
+     list-style-type: none;
+}
+a {
+    text-decoration: none;
+    display: inline-block;
+    
+}
