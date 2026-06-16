@@ -7,33 +7,33 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&family=Roboto:ital@0;1&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="./scss/main.css">
+    <link rel="stylesheet" href="./css/main.min.css">
     <title>Сучасна пекарня</title>
 </head>
 <body>
 
     <header class="header">
 <div class="container">
-            <div class="header-container">
-            <nav class="header-nav">
-                <a class="header-nav-link" href="./images/logo.svg" target="_blank">shop<br>
-            <span class="header-nav-span">bakery</span></a> 
-            <ul class="header-nav-list">
-            <li class="header-nav-item">
-                <a class="header-nav-item-link" href="#" target="_blank">Наші традиції</a>
+            <div class="header__container">
+            <nav class="header__nav">
+            <a class="logo" href="./images/logo.svg" target="_blank">shop<br>
+            <span class="logo__span">bakery</span></a> 
+            <ul class="header__menu">
+            <li>
+                <a class="nav-link" href="#" target="_blank">Наші традиції</a>
             </li>
-            <li class="header-nav-item">
-                <a class="header-nav-item-link" href="#" target="_blank">Шеф-кухарі</a>
+            <li>
+                <a class="nav-link" href="#" target="_blank">Шеф-кухарі</a>
             </li>
-            <li class="header-nav-item">
-                <a class="header-nav-item-link" href="#" target="_blank">Формати</a>
+            <li>
+                <a class="nav-link" href="#" target="_blank">Формати</a>
             </li>
-            <li class="header-nav-item">
-                <a class="header-nav-item-link" href="#" target="_blank">Контакти</a>
+            <li>
+                <a class="nav-link" href="#" target="_blank">Контакти</a>
             </li>
         </ul>
     </nav>
-    <button class="header-btn modal-btn-open">Замовити дзвінок</button>
+    <button class="call-button modal-btn-open">Замовити дзвінок</button>
     </div>
 </div>
 </header>
@@ -41,7 +41,7 @@
         <!-- Tитульна секція -->
         <section class="hero">
 <div class="container">
-    <h1 class="hero-title">Сучасна <span class="hero-title-span">пекарня</span>
+    <h1 class="hero__title">Сучасна <span class="hero__title-span">пекарня</span>
     </h1>
 </div>
 </section>
@@ -192,7 +192,7 @@
                 required>
 </div>
             <button 
-            class="form-button header-btn" 
+            class="form-button call-button" 
             type="submit">Замовити дзвінок
         </button>
             <p class="form-terms">Натискаючи на кнопку я погоджуюсь з 
@@ -214,14 +214,14 @@
            <div class="footer-container">
                 <nav class="footer-nav">
                     <div class="footer-link">
-                    <a class="header-nav-link footer-logo" href="./images/logo.svg">shop 
-                        <span class="header-nav-span">bakery</span></a>
+                     <a class="logo" href="./images/logo.svg" target="_blank">shop<br>
+            <span class="logo__span">bakery</span></a> 
                  </div>
                 <ul class="footer-menu">
-                    <li class="footer-item"><a class="footer-list-link" href="#" target="_blank">Наші традиції</a></li>
-                    <li class="footer-item"><a class="footer-list-link" href="#" target="_blank">Шеф-кухарі</a></li>
-                    <li class="footer-item"><a class="footer-list-link" href="#" target="_blank">Формати</a></li>
-                    <li class="footer-item"><a class="footer-list-link" href="#" target="_blank">Контакти</a></li>
+                    <li class="footer-item"><a class="nav-link" href="#" target="_blank">Наші традиції</a></li>
+                    <li class="footer-item"><a class="nav-link" href="#" target="_blank">Шеф-кухарі</a></li>
+                    <li class="footer-item"><a class="nav-link" href="#" target="_blank">Формати</a></li>
+                    <li class="footer-item"><a class="nav-link" href="#" target="_blank">Контакти</a></li>
                 </ul>
             </nav>
                 <address class="footer-addres">

@@ -1,0 +1,57 @@
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: var(--font-family);
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 1.5;
+  margin: 0;
+  color: var(--color-primary-dark);
+  // background-color: var(--color-primery-light);
+  background-color: #bb8529;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin-top: 0;
+}
+ul {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+a {
+  text-decoration: none;
+  display: inline-block;
+}
+.centered {
+  text-align: center;
+}
+.container {
+  width: 100%;
+  max-width: 1288px;
+  padding: 0 24px;
+  margin: 0 auto;
+}
+.section {
+  padding: 48px 0;
+}
+.logo {
+  font-weight: 400;
+  font-size: 24px;
+  text-transform: uppercase;
+  color: var(--main-light);
+
+  &__span {
+      font-weight: 700;
+  }
+}

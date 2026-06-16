@@ -1,27 +1,2 @@
-@import './base';
-@import './components/buttons';
-@import './components/header';
-@import './components/hero';
-@import './components/advantages-section';
-@import './components/headchef-section';
-@import './components/formats-section';
-@import './components/carousel-button';
-@import './components/contact-section';
-@import './components/footer';
-@import './components/modal';
-@import '';
-@import './utils/visual-hidden';
+@use "./importer";
 
-
-.centered {
-    text-align: center;
-}
-.container {
-    width: 100%;
-    max-width: 1288px;
-    padding: 0 24px;
-    margin: 0 auto;
-}
-.section {
-    padding: 48px 0;
-}
