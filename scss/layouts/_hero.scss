@@ -1,3 +1,5 @@
+@use '../components/variables' as *;
+
 .hero {
     padding: 272px 0;
     border-color: var(--color-brand-normal);
@@ -11,9 +13,6 @@
         font-weight: 900;
         font-size: 128px;
         text-align: center;
-        color: var(--color-brand-normal);
-    }
-    &__title-span {
-    color: var(--color-primary-light);
+        color: var(--color-primary-light);
     }
 }

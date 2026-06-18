@@ -11,8 +11,8 @@ body {
   line-height: 1.5;
   margin: 0;
   color: var(--color-primary-dark);
-  // background-color: var(--color-primery-light);
-  background-color: #bb8529;
+  background-color: var(--color-primary-light);
+  // background-color: #bb8529;
 }
 
 h1,
@@ -48,7 +48,6 @@ a {
 .logo {
   font-weight: 400;
   font-size: 24px;
-  text-transform: uppercase;
   color: var(--main-light);
 
   &__span {

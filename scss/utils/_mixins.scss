@@ -1,0 +1,12 @@
+@mixin display($justify, $align, $gap: 0) {
+  display: flex;
+  justify-content: $justify;
+  align-items: $align;
+  gap: $gap;
+}
+@mixin texts($size, $weight, $color, $line-height: 1) {
+  font-size: $size;
+  font-weight: $weight;
+  color: $color;
+  line-height: $line-height;
+}

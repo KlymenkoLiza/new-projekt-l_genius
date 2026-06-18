@@ -1,0 +1,11 @@
+@use '../components/variables' as *;
+@use '../utils/mixins' as *;
+.color {
+    color: var(--color-brand-normal);
+    }
+.h2 {
+    @include texts(64px, 900, var(--color-primary-dark), 131%);
+}
+.uperrcase {
+    text-transform: uppercase;
+}

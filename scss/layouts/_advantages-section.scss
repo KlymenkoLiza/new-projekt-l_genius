@@ -1,17 +1,17 @@
-.advantages {
+@use '../components/variables' as *;
+@use '../utils/mixins' as *;
+
+.advantages-section {
     background-color: var(--color-brand-normal);
-padding-bottom: 16px;
-padding-top: 16px;
-max-height: 62px;
+
+    &__list {
+        @include display(space-between, center, 40px);
+        padding-bottom: 16px;
+        padding-top: 16px;
+    }
+
+    &__item {
+        @include texts(20px, 300, var(--main-light));
+    }
 }
 
-.advantages-list {
-    display: flex;
-    justify-content: space-between;
-   gap: 40px;
-}
-.advantages-item {
-    color: var(--main-light);
-    font-weight: 300;
-font-size: 20px;
-}
