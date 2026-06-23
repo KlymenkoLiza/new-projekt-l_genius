@@ -5,6 +5,10 @@
     }
 .h2 {
     @include texts(64px, 900, var(--color-primary-dark), 131%);
+    margin: 0;
+    &--centered {
+        text-align: center;
+    }
 }
 .uperrcase {
     text-transform: uppercase;

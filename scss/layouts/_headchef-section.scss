@@ -1,72 +1,41 @@
-.headchef-title {
-font-weight: 900;
-font-size: 64px;
-line-height: 131%;
-text-align: center;
-color: #31261A;
-margin: 0 auto 80px;
-position: relative;
-}
-.headchef-title::before, 
-.headchef-title::after {
-    content: '';
-    display: block;
-    width: 352px;
-    border: 2px solid var(--color-brand-light);
-    position: absolute;
-    bottom: 24px;
-}
-.headchef-title::before {
-    left: 0;
-}
-.headchef-title::after {
-    right: 0;
-}
-.chef-photo {
-    border-radius: 4px 4px 4px 200px;
-        box-shadow: -16px 16px 0 0 var(--color-primery-light),
-     -16px 16px 0 2px var(--color-secondary-dark);
-}
-.headchef-list {
-    display: flex;
-    gap: 30px;
-}
+@use "../components/variables" as *;
+@use "../utils/mixins" as *;
+.headchef-section {
+   
+    &__title {
+    position: relative;
 
-.headchef-span {
-    color: #465929;
+    &::before, 
+    &::after {
+        content: '';
+        display: block;
+        width: 352px;
+        border: 2px solid var(--color-brand-light);
+        position: absolute;
+        bottom: 24px;
+    }
+    &::before {
+        left: 0;
+    }
+    &::after {
+        right: 0;
+    }
+    }
+    &__span {
+            color: var(--color-brand-dark);
 }
-.headchef-list {
-     display: flex;
-     gap: 40px 30px;
-     flex-wrap: wrap;
-}
-
-.headchef-item {
+    &__list {
+        display: flex;
+        gap: 40px 30px;
+        flex-wrap: wrap;
+        margin-top: 80px;
+    }
+    &__item {
     display: flex;
     width: 605px;
     justify-content: center;
     flex-basis: calc((100% - 30px) / 2);
 }
-.headchef-card {
-    display: flex;
-    gap: 30px;
+
 }
-.headchef-item-container {
-    display: flex;
-    flex-direction: column;
-    width: 335px;
-}
-.headchef-subtitle {
-font-weight: 600;
-font-size: 40px;
-color: var(--color-primary-dark);
-}
-.headchef-text p{
-font-weight: 400;
-font-size: 18px;
-color: var(--color-primary-dark);
-margin-bottom: 24px;
-}
-.headchef-text p:last-child {
-    margin-bottom: 0;
-}
+

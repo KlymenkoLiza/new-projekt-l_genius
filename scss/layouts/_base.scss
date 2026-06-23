@@ -12,7 +12,6 @@ body {
   margin: 0;
   color: var(--color-primary-dark);
   background-color: var(--color-primary-light);
-  // background-color: #bb8529;
 }
 
 h1,
@@ -22,7 +21,7 @@ h4,
 h5,
 h6,
 p {
-  margin-top: 0;
+  margin: 0;
 }
 ul {
   margin: 0;
@@ -43,7 +42,7 @@ a {
   margin: 0 auto;
 }
 .section {
-  padding: 48px 0;
+  margin-top: 96px;
 }
 .logo {
   font-weight: 400;
