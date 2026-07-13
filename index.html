@@ -177,17 +177,17 @@
         </section>
         <section class="contact-section section">
             <div class="container">
-           <div class="contact-container">
-                <div class="contact-form">
-                    <h2 class="contact-title">Приєднуйся до мережі пекарень</h2>
-                    <p class="contact-text">Заповни форму, щоб ми звʼязались з тобою!</p>
+           <div class="contact-section__container">
+                <div class="contact-section__form">
+                    <h2 class="contact-section__title h2">Приєднуйся до мережі пекарень</h2>
+                    <p class="contact-section__text">Заповни форму, щоб ми звʼязались з тобою!</p>
             <form name="contact-form" autocomplete="off">
-   <div class="form-field">
+   <div class="contact-section__form-field input">
                 <label 
-                class="form-label visual-hidden" 
+                class="input__label visual-hidden" 
                 for="user-name">Ім'я</label>
                 <input 
-                class="form-input" 
+                class="input__control" 
                 type="text" 
                 name="user-name" 
                 id="user-name"
@@ -196,12 +196,12 @@
                 maxlength="20" 
                 required>
    </div>
-<div class="form-field">
+<div class="contact-section__form-field input">
                 <label 
-                class="form-label visual-hidden" 
+                class="input__label visual-hidden" 
                 for="user-tel">Телефон</label>
                 <input 
-                class="form-input" 
+                class="input__control" 
                 type="tel" 
                 name="user-tel" 
                 id="user-tel"
@@ -209,12 +209,12 @@
                 max="12" 
                 required>
 </div>
-<div class="form-field">
+<div class="contact-section__form-field input">
                 <label 
-                class="form-label visual-hidden" 
-                for="user-email">Ім'я</label>
+                class="input__label visual-hidden" 
+                for="user-email">Електрона пошта</label>
                 <input 
-                class="form-input" 
+                class="input__control" 
                 type="email" 
                 name="user-email" 
                 id="user-email"
@@ -222,15 +222,16 @@
                 required>
 </div>
             <button 
-            class="form-button call-button" 
-            type="submit">Замовити дзвінок
+            class="contact-section__button call-button" 
+            type="submit">
+            Замовити дзвінок
         </button>
             <p class="form-terms">Натискаючи на кнопку я погоджуюсь з 
-            <a class="form-terms-link" href="#">політикою конфіденційності</a>
+            <a class="form-terms__link" href="#">політикою конфіденційності</a>
         </p>
         </form>
                     </div>
-                    <iframe class="contact-map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2540.1636289098733!2d30.4912733!3d50.4566776!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40d4ce637c006b2d%3A0xaf86385f19996ff0!2z0LLRg9C70LjRhtGPINCh0ZbRh9C-0LLQuNGFINCh0YLRgNGW0LvRjNGG0ZbQsiwgNTQsINCa0LjRl9CyLCAwMjAwMA!5e0!3m2!1suk!2sua!4v1734289349022!5m2!1suk!2sua" 
+                    <iframe class="contact-section__map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2540.1636289098733!2d30.4912733!3d50.4566776!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40d4ce637c006b2d%3A0xaf86385f19996ff0!2z0LLRg9C70LjRhtGPINCh0ZbRh9C-0LLQuNGFINCh0YLRgNGW0LvRjNGG0ZbQsiwgNTQsINCa0LjRl9CyLCAwMjAwMA!5e0!3m2!1suk!2sua!4v1734289349022!5m2!1suk!2sua" 
                     width="603" height="595" style="border:0;" allowfullscreen="" loading="lazy" 
                     referrerpolicy="no-referrer-when-downgrade">
                 </iframe>
@@ -241,46 +242,53 @@
     </main>
     <footer class="footer">
        <div class="container">
-           <div class="footer-container">
-                <nav class="footer-nav">
-                    <div class="footer-link">
+           <div class="footer__container">
+                <nav class="footer__nav">
+                    <div class="footer__logo">
                      <a class="logo" href="./images/logo.svg" target="_blank">shop<br>
             <span class="logo__span">bakery</span></a> 
                  </div>
-                <ul class="footer-menu">
-                    <li class="footer-item"><a class="nav-link" href="#" target="_blank">Наші традиції</a></li>
-                    <li class="footer-item"><a class="nav-link" href="#" target="_blank">Шеф-кухарі</a></li>
-                    <li class="footer-item"><a class="nav-link" href="#" target="_blank">Формати</a></li>
-                    <li class="footer-item"><a class="nav-link" href="#" target="_blank">Контакти</a></li>
+                <ul class="footer__menu">
+                    <li class="footer__item">
+                        <a class="footer__link" href="#" target="_blank">Наші традиції</a></li>
+                    <li class="footer__item">
+                        <a class="footer__link" href="#" target="_blank">Шеф-кухарі</a></li>
+                    <li class="footer__item">
+                        <a class="footer__link" href="#" target="_blank">Формати</a></li>
+                    <li class="footer__item">
+                        <a class="footer__link" href="#" target="_blank">Контакти</a></li>
                 </ul>
             </nav>
-                <address class="footer-addres">
-                    <ul class="addres-list">
-                        <li class="footer-addres-item"><a class="footer-addres-link" href="tel:+380960000007" target="_blank" target="_blank"></a>+ 38 (096) 000 00 07</li>
-                        <li class="footer-addres-item"><a class="footer-addres-link" href="mailto:shopbakery@gmail.com" target="_blank" target="_blank"></a>shopbakery@gmail.com</li>
-                        <li class="footer-addres-item"><a class="footer-addres-link" href="https://maps.app.goo.gl/YaLbmJKHCNDTKfP9A" target="_blank"></a>Україна, м. Київ, 
-                            вул. Січових Стрільців 54</li>
-                        <li class="footer-addres-item">
-                            <a class="footer-addres-link">
-                                
-                            <a class="footer-addres-link" href="#">
-                                <svg class="footer-item-svg" width="32" height="32">
-                                    <use href="./images/icons.svg#icon-facebook"></use>
-                                </svg>
-                            </a>
-                        </li>
-                        <li class="footer-addres-item">
-                            <a class="footer-addres-link" href="#" target="_blank">
-                                <svg class="footer-item-svg" width="32" height="32">
-                                    <use href="./images/icons.svg#icon-instagram">     
-                                    </use>
-                                </svg>
-                            </a>
-                        </li>
+                <address class="footer__address">
+                    <ul class="footer__address-list">
+                        <li class="footer__address-item">
+                            <a class="footer__address-link" href="tel:+380960000007" target="_blank" target="_blank"></a>+ 38 (096) 000 00 07</li>
+                        <li class="footer__address-item">
+                            <a class="footer__address-link" href="mailto:shopbakery@gmail.com" target="_blank" target="_blank"></a>shopbakery@gmail.com</li>
+                        <li class="footer__address-item">
+                            <a class="footer__address-link" href="https://maps.app.goo.gl/YaLbmJKHCNDTKfP9A" target="_blank"></a>Україна, м. Київ,<br/> 
+                            вул. Січoвих Стрільців 54</li>
+                        <div class="footer__address-social">
+                            <li class="footer__address-item">    
+                                <a class="footer__address-link" href="#">
+                                    <svg class="footer__item-svg" width="32" height="32">
+                                        <use href="./images/icons.svg#icon-facebook"></use>
+                                    </svg>
+                                </a>
+                            </li>
+                            <li class="footer__address-item">
+                                <a class="footer__address-link" href="#" target="_blank">
+                                    <svg class="footer__item-svg" width="32" height="32">
+                                        <use href="./images/icons.svg#icon-instagram">     
+                                        </use>
+                                    </svg>
+                                </a>
+                            </li>
+                        </div>
                     </ul>
-                    <div class="addres-info">
-                        <a class="footer-addres-link" href="#" target="_blank">Політика конфедиціалбності</a>
-                        <p class="addres-copiright">&copy; 2022 Дані захищені</p>
+                    <div class="footer__address-info">
+                        <a class="footer__address-link" href="#" target="_blank">Політика конфедиціалбності</a>
+                        <p class="footer__address-copiright">&copy; 2022 Дані захищені</p>
                     </div>
                 </address>
                 
@@ -289,49 +297,57 @@
     </footer>
     <div class="backdrop is-hidden">
         <div class="modal">
-            <button class="modal-btn-close" type="button">close</button>
-            <h2>Замовити дзвінок</h2>
-            <p>Залишіть заявку та наш спеціаліст зв'яжеться з Вами!</p>
-        <form class="modal-form" name="modal-form" autocomplete="off">
-   <div class="form-field">
-                <label 
-                class="form-label visual-hidden" 
-                for="user-name">Ім'я</label>
-                <input 
-                class="form-input" 
-                type="text" 
-                name="user-name" 
-                id="user-name"
-                placeholder="Ім'я" 
-                required>
-   </div>
-<div class="form-field">
-                <label 
-                class="form-label visual-hidden" 
-                for="user-tel">Телефон</label>
-                <input 
-                class="form-input" 
-                type="tel" 
-                name="user-tel" 
-                id="user-tel"
-                placeholder="Телефон"
-                required>
+            <button class="modal__btn-close modal-btn-close" type="button">X
+                <!-- <svg width="32"
+                height="32">
+                    <use class="modal__btn" href="./images/icons.svg#icon-close-btn"></use>
+                </svg> -->
+            </button>
+<div class="modal__container">
+                <h2 class="h2 h2--centered">Замовити дзвінок</h2>
+                <p class="modal__text">Залишіть заявку та наш спеціаліст зв'яжеться з Вами!</p>
+            <form class="modal__form" name="modal-form" autocomplete="off">
+       <div class="modal__form-field input">
+                    <label 
+                    class="input__label visual-hidden" 
+                    for="user-name"></label>
+                    <input 
+                    class="input__control" 
+                    type="text" 
+                    name="user-name" 
+                    id="user-name"
+                    placeholder="Ім'я" 
+                    required>
+       </div>
+    <div class="modal__form-field input">
+                    <label 
+                    class="input__label visual-hidden" 
+                    for="user-tel"></label>
+                    <input 
+                    class="input__control" 
+                    type="tel" 
+                    name="user-tel" 
+                    id="user-tel"
+                    placeholder="Телефон"
+                    required>
+    </div>
+    <div class="modal__form-field input">
+                    <label 
+                    class="input__label visual-hidden" 
+                    for="user-email"></label>
+                    <input 
+                    class="input__control" 
+                    type="email" 
+                    name="user-email" 
+                    id="user-email"
+                    placeholder="Електрона пошта"
+                    required/>
+    </div>
+                <button class="modal__button call-button" type="submit">Замовити дзвінок</button>
+                <p class="form-terms">Натискаючи на кнопку я погоджуюсь з 
+                <a class="form-terms__link" href="#">політикою конфіденційності</a>
+            </p>
 </div>
-<div class="form-field">
-                <label 
-                class="form-label visual-hidden" 
-                for="user-email">Ім'я</label>
-                <input 
-                class="form-input" 
-                type="email" 
-                name="user-email" 
-                id="user-email"
-                placeholder="Електрона пошта"
-                required/>
-</div>
-            <button class="form-button header-btn" type="submit">Замовити дзвінок</button>
-            <p class="form-terms">Натискаючи на кнопку я погоджуюсь з 
-            <a class="form-terms-link" href="#">політикою конфіденційності</a></p>
         </form>
         </div>
     </div>

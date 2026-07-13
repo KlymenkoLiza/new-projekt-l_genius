@@ -1,3 +1,6 @@
+@use "../components/variables" as *;
+@use "../utils/mixins" as *;
+
 .backdrop {
     position: fixed;
     top: 0;
@@ -5,79 +8,60 @@
     left: 0;
     right: 0;
     background-color: rgba(0, 0, 0, 0.5);
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    @include display(center, center);
     padding: 20px 0;
     transition: opacity 0.3s, visibility 0.3s;
-}
-.backdrop.is-hidden {
-    opacity: 0;
-    visibility: hidden;
-    pointer-events: none;
+    
+    &.is-hidden {
+        opacity: 0;
+        visibility: hidden;
+        pointer-events: none;
+    }
 }
 .modal {
     width: 100%;
     max-width: 880px;
     height: 100%;
     max-height: 880px;
-    background-color: var(--color-primery-light);
+    background-color: var(--color-primary-light);
     border-radius: 30px;
     position: relative;
     overflow-y: auto;
-}
-.modal-form {
-    max-width: 630px;
-    margin: 0 auto;
-}
-.modal-btn-close {
-    position: absolute;
-    top: 40px;
-    right: 40px;
-}
-/* Form */
-.form-label {
-    position: absolute;
-    top: 16px;
-    left: 42px;
-  
-}
-.form-input {
-    font-size: 16px;
-    line-height: 1.17;
-    padding: 16px 42px;
-    width: 100%;
-    border: 1px solid var(--color-secondary-dark);
-    border-radius: 8px;
-    background-color: transparent;
-    margin-bottom: 32px;
-}
-.form-input:focus {
-    border-color: var(--color-brand-normal);
-    outline: none;
-}
-.form-input::placeholder {
-color: #A18268;
-font-size: 16px;
-line-height: 1.17;
-}
-.form-input:focus::placeholder {
-color: var(--color-primary-dark);
-}
-.form-button {
+
+    &__container {
+        // @include display(center, center);
+        padding-top: 128px;
+        padding-bottom: 178px;
+    }
+    
+    &__btn-close {
+        position: absolute;
+        top: 40px;
+        right: 40px;
+        background-color: transparent;
+        border: none;
+    }
+    &__btn {
+        fill: var(--color-primary-dark);
+    }
+    &__form-field {
+        margin-bottom: 32px;
+    }
+    &__text {
+        text-align: center;
+        margin-top: 8px;
+        margin-bottom: 72px;
+    }
+    &__button {
     display: block;
     margin: 0 auto 24px;
+    }
+    &__form {
+        max-width: 630px;
+        margin: 0 auto;
+    }
+
 }
-.form-terms {
-    max-width: 230px;
-    margin: 0 auto;
-    font-weight: 500;
-    font-size: 12px;
-    line-height: 1.5;
-    text-align: center;
-}
-.form-terms-link {
-    color: var(--color-primary-dark);
-    text-decoration: underline;
-    text-underline-offset: 3px;
-}
+/* Form */
+
+

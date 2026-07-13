@@ -4,7 +4,7 @@
     color: var(--color-brand-normal);
     }
 .h2 {
-    @include texts(64px, 900, var(--color-primary-dark), 131%);
+    @include texts(62px, 900, var(--color-primary-dark), 131%);
     margin: 0;
     &--centered {
         text-align: center;

@@ -1,23 +1,39 @@
+@use "../components/variables" as *;
+@use "../utils/mixins" as *;
+
 .contact-section {
     padding-bottom: 96px;
-}
-.contact-container {
-    display: flex;
-    gap: 32px;
-}
-.contact-title {
-   font-weight: 900;
-font-size: 64px;
-line-height: 131%;
-color: var(--color-primary-dark); 
-}
-.contact-text {
-font-weight: 400;
-font-size: 18px;
-color: var(--color-primary-dark);
-}
-.contact-map {
-    flex-shrink: 0;
-    border: none;
-    border-radius: 16px;
+
+    &__container {
+        display: flex;
+        gap: 32px;
+        align-items: flex-start;
+    }
+    &__form {
+        max-width: 605px;
+    }
+    &__title {
+    }
+    &__text {
+        @include texts(18px, 400, var(--color-primary-dark), 150%);
+        margin-bottom: 42px;
+        margin-top: 16px;
+
+
+    }
+    &__button {
+        display: block;
+        margin: 0 auto 16px;
+    }
+    &__map {
+        flex-shrink: 0;
+        border: none;
+        border-radius: 16px;
+
+    }
+    &__form-field {
+        margin-bottom: 24px;
+
+    }
+
 }
