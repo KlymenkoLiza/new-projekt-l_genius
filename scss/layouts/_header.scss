@@ -21,11 +21,34 @@
     }
 
     &__menu {
+      display: none;
+
+        @media screen and (min-width: $bp-desktop) {
         display: flex;
         flex-grow: 1;
         gap: 64px;
         justify-content: center;
+        }
     }
+    &__button {
+            display: none;
 
+        @media screen and (min-width: $bp-desktop) {
+            display: block;
+        }
+    }
+    &__burger {
+        width: 24px;
+        height: 24px;
+        padding: 0;
+        border: none;
+        background-color: transparent;
+        fill: var(--color-primary-light);
+
+   @media screen and (min-width: $bp-desktop) {
+        display: none;
+    
+        }
+    }
 }
 
