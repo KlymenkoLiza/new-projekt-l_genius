@@ -1,3 +1,5 @@
+@use '../components/variables' as *;
+
 *,
 *::after,
 *::before {
@@ -46,10 +48,16 @@ a {
 }
 .logo {
   font-weight: 400;
-  font-size: 24px;
+  font-size: 16px;
   color: var(--main-light);
 
   &__span {
       font-weight: 700;
   }
+
+  
+  @media screen and (min-width: $bp-desktop) {
+    font-size: 24px;
+  }
+
 }
